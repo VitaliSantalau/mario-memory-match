@@ -1,7 +1,7 @@
 {
-	"name": "phaser3-typescript-vite-template",
+	"name": "mario-memory-match-game",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
 		"start": "vite",
@@ -16,6 +16,6 @@
 		"vite": "^3.1.0"
 	},
 	"dependencies": {
-		"phaser": "^3.55.2"
+		"phaser": "^3.60.0"
 	}
 }

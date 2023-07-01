@@ -1,7 +1,9 @@
-# Phaser 3 + Vite.js Template
-> Make Phaser 3 games with modern frontend tooling.
+# Phaser 3 + TypeScript + Vite.js Template
+> Make Phaser 3 games with TypeScript and modern frontend tooling.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+This is a TypeScript specific fork of [phaser3-vite-template](https://github.com/ourcade/phaser3-vite-template).
 
 ## Prerequisites
 
@@ -26,7 +28,7 @@ Replace 'node' with 'latest' for `nvm-windows`.
 You can clone this repository or use [degit](https://github.com/Rich-Harris/degit) to scaffold the project like this:
 
 ```bash
-npx degit https://github.com/ourcade/phaser3-vite-template my-folder-name
+npx degit https://github.com/ourcade/phaser3-typescript-vite-template my-folder-name
 cd my-folder-name
 
 npm install
@@ -54,17 +56,17 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── node_modules
     ├── public
     ├── src
-    │   ├── HelloWorldScene.js
-    │   ├── main.js
+    │   ├── HelloWorldScene.ts
+    │   ├── main.ts
 	├── index.html
     ├── package.json
 ```
 
-JavaScript files are intended for the `src` folder. `main.js` is the entry point referenced by `index.html`.
+TypeScript files are intended for the `src` folder. `main.ts` is the entry point referenced by `index.html`.
 
 Other than that there is no opinion on how you should structure your project.
 
-There is an example `HelloWorldScene.js` file that can be placed inside a `scenes` folder to organize by type or elsewhere to organize by function. For example, you can keep all files specific to the HelloWorld scene in a `hello-world` folder.
+There is an example `HelloWorldScene.ts` file that can be placed inside a `scenes` folder to organize by type or elsewhere to organize by function. For example, you can keep all files specific to the HelloWorld scene in a `hello-world` folder.
 
 It is all up to you!
 
@@ -86,9 +88,9 @@ Example `public` structure:
 
 They can then be loaded by Phaser with `this.image.load('my-image', 'images/my-image.png')`.
 
-# ESLint
+# TypeScript ESLint
 
-This template uses a basic `eslint` set up for code linting to help you find and fix common problems in your JavaScript code.
+This template uses a basic `typescript-eslint` set up for code linting.
 
 It does not aim to be opinionated.
 
@@ -96,7 +98,7 @@ It does not aim to be opinionated.
 
 ## Dev Server Port
 
-You can change the dev server's port number by modifying the `vite.config.js` file. Look for the `server` section:
+You can change the dev server's port number by modifying the `vite.config.ts` file. Look for the `server` section:
 
 ```js
 {

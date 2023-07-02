@@ -8,12 +8,13 @@ import Preloader from './scenes/PreloaderScene'
 const config: Phaser.Types.Core.GameConfig = {
 	type: Phaser.AUTO,
 	parent: 'app',
-	width: 800,
+	width: 700,
 	height: 600,
 	physics: {
 		default: 'arcade',
 		arcade: {
-			gravity: { y: 200 },
+			gravity: { y: 0 },
+			debug: true
 		},
 	},
 	scale: {
